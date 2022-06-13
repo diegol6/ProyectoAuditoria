@@ -1,0 +1,58 @@
+﻿@model AuditoriaModel
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Editar Auditoria
+  </div>
+  <div class="card-body">
+    
+      <form asp-action="Editar" asp-controller="MantenedorA" method="post">
+          <div class="mb-3">
+            <label class="form-label"> IdAuditoria  </label>
+            <input asp-for="IdAuditoria" type="hidden" class="form-control" >
+            <span asp-validation-for="IdAuditoria" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> FechaInicioAuditoria </label>
+            <input asp-for="FechaInicioAuditoria" type="text" class="form-control">
+            <span asp-validation-for="FechaInicioAuditoria" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> FechaFinalAuditoria </label>
+            <input asp-for="FechaFinalAuditoria" type="text" class="form-control">
+            <span asp-validation-for="FechaFinalAuditoria" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Comentarios  </label>
+            <input asp-for="Comentarios" type="text" class="form-control">
+            <span asp-validation-for="Comentarios" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Recomendacion </label>
+            <input asp-for="Recomendacion" type="text" class="form-control" >
+            <span asp-validation-for="Recomendacion" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> IdActivo </label>
+            <input asp-for="IdActivo" type="text" class="form-control">
+            <span asp-validation-for="IdActivo" class="text-danger"></span>
+          </div>
+
+          
+          <button type="submit" class="btn btn-primary">Guadar</button>
+          <a asp-action="Listar" asp-controller="MantenedorA" class="btn btn-warning" >Volver a la Lista</a>
+       </form>
+
+  </div>
+</div>
+
+

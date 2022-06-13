@@ -1,0 +1,92 @@
+﻿@model ActivoModel
+@{
+    ViewData["Title"] = "Guardar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Crear Activo
+  </div>
+  <div class="card-body">
+    
+      <form asp-action="Guardar" asp-controller="Mantenedor" method="post">
+          <div class="mb-3">
+            <label class="form-label"> IdActivo </label>
+            <input asp-for="IdActivo" type="text" class="form-control" >
+            <span asp-validation-for="IdActivo" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Nombre </label>
+            <input asp-for="Nombre" type="text" class="form-control">
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Descripcion </label>
+            <input asp-for="Descripcion" type="text" class="form-control">
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Tipo </label>
+            <input asp-for="Tipo" type="text" class="form-control">
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Departamento </label>
+            <input asp-for="Departamento" type="text" class="form-control">
+            <span asp-validation-for="Departamento" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Clasificacion </label>
+            <input asp-for="Clasificacion" type="text" class="form-control">
+            <span asp-validation-for="Clasificacion" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Criticidad </label>
+            <input asp-for="Criticidad" type="text" class="form-control" >
+            <span asp-validation-for="Criticidad" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Propietario </label>
+            <input asp-for="Propietario" type="text" class="form-control">
+            <span asp-validation-for="Propietario" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Custodio </label>
+            <input asp-for="Custodio" type="text" class="form-control">
+            <span asp-validation-for="Custodio" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Usuarios </label>
+            <input asp-for="Usuarios" type="text" class="form-control">
+            <span asp-validation-for="Usuarios" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Fecha Ingreso </label>
+            <input asp-for="Fecha_Ingreso" type="text" class="form-control">
+            <span asp-validation-for="Fecha_Ingreso" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Fecha Salida </label>
+            <input asp-for="Fecha_Salida" type="text" class="form-control">
+            
+          </div>
+
+          <button type="submit" class="btn btn-primary">Guadar</button>
+          <a asp-action="Listar" asp-controller="Mantenedor" class="btn btn-warning" >Volver a la Lista</a>
+       </form>
+
+  </div>
+</div>
+

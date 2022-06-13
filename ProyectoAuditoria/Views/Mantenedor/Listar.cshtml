@@ -1,0 +1,64 @@
+﻿@model List<ActivoModel>
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Listar Activo
+  </div>
+  <div class="card-body">
+    
+   <a asp-action="Guardar" asp-controller="Mantenedor" class="btn btn-success" >Crear Nuevo Activo</a>
+
+   <hr />
+
+   <table class="table table-bordered">
+         <thead>
+             <tr>
+                 <th>IdActivo</th>
+                 <th>Nombre</th>
+                 <th>Descripcion</th>
+                 <th>Tipo</th>
+                 <th>Departamento</th>
+                 <th>Clasificacion</th>
+                 <th>Criticidad</th>
+                 <th>Propietario</th>
+                 <th>Custodio</th>
+                 <th>Usuarios</th>
+                 <th>Fecha Ingreso</th>
+                 <th>Fecha Salida</th>
+                 <th></th>
+             </tr>
+         </thead>
+         <tbody>
+             @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdActivo</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Descripcion</td>
+                        <td>@item.Tipo</td>
+                        <td>@item.Departamento</td>
+                        <td>@item.Clasificacion</td>
+                        <td>@item.Criticidad</td>
+                        <td>@item.Propietario</td>
+                        <td>@item.Custodio</td>
+                        <td>@item.Usuarios</td>
+                        <td>@item.Fecha_Ingreso</td>
+                        <td>@item.Fecha_Salida</td>
+                        <td>
+                            <a asp-action="Editar" asp-controller="Mantenedor" class="btn btn-primary btn-sm" asp-route-IdActivo=@item.IdActivo>Editar</a>
+                            <a asp-action="Eliminar" asp-controller="Mantenedor" class="btn btn-danger btn-sm" asp-route-IdActivo=@item.IdActivo>Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+     </table>
+
+
+
+  </div>
+</div>

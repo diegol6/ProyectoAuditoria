@@ -1,0 +1,53 @@
+﻿@model List<AuditoriaModel>
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Listar Auditorias
+  </div>
+  <div class="card-body">
+    
+   <a asp-action="Guardar" asp-controller="MantenedorA" class="btn btn-success" >Crear Nueva Auditoria</a>
+
+   <hr />
+
+   <table class="table table-bordered">
+         <thead>
+             <tr>
+                 <th>IdAuditoria </th>
+                 <th>FechaInicioAuditoria</th>
+                 <th>FechaFinalAuditoria</th>
+                 <th>Comentarios</th>
+                 <th>Recomendacion</th>
+                 <th>IdActivo</th>
+                 <th></th>
+             </tr>
+         </thead>
+         <tbody>
+             @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdAuditoria</td>
+                       <td>@item.FechaInicioAuditoria</td>
+                       <td>@item.FechaFinalAuditoria</td>
+                       <td>@item.Comentarios</td>
+                       <td>@item.Recomendacion</td>
+                       <td>@item.IdActivo</td>
+                        <td>
+                            <a asp-action="Editar" asp-controller="MantenedorA" class="btn btn-primary btn-sm" asp-route-IdAuditoria=@item.IdAuditoria>Editar</a>
+                            <a asp-action="Eliminar" asp-controller="MantenedorA" class="btn btn-danger btn-sm" asp-route-IdAuditoria=@item.IdAuditoria>Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+     </table>
+
+
+
+  </div>
+</div>
+
