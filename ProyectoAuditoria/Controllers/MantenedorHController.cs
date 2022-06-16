@@ -6,7 +6,7 @@ using ProyectoAuditoria.Models;
 
 namespace ProyectoAuditoria.Controllers
 {
-    public class MantenedorControllerH : Controller
+    public class MantenedorHController : Controller
     {
         HallazgoDatos _HallazgoDatos = new HallazgoDatos();
         public IActionResult Listar()

@@ -6,7 +6,7 @@
 
 <div class="card">
   <div class="card-header">
-    Crear Activo
+    Crear Auditoria
   </div>
   <div class="card-body">
     
@@ -31,23 +31,16 @@
           </div>
 
           <div class="mb-3">
-            <label class="form-label"> Comentarios </label>
-            <textarea  asp-for="Comentarios" type="text" class="form-control"></textarea>
-            <span asp-validation-for="Comentarios" class="text-danger"></span>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label"> Recomendacion </label>
-            <textarea  asp-for="Recomendacion" type="text" class="form-control"></textarea>
-            <span asp-validation-for="Recomendacion" class="text-danger"></span>
-          </div>
-
-          <div class="mb-3">
             <label class="form-label"> IdActivo </label>
             <input asp-for="IdActivo" type="text" class="form-control">
             <span asp-validation-for="IdActivo" class="text-danger"></span>
           </div>
 
+          <div class="mb-3">
+            <label class="form-label"> IdHallazgo </label>
+            <input asp-for="IdHallazgo" type="text" class="form-control">
+            <span asp-validation-for="IdHallazgo" class="text-danger"></span>
+          </div>
                    
           <button type="submit" class="btn btn-primary">Guadar</button>
           <a asp-action="Listar" asp-controller="MantenedorA" class="btn btn-warning" >Volver a la Lista</a>

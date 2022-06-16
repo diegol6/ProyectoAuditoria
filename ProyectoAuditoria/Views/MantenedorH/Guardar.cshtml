@@ -1,0 +1,39 @@
+﻿@model HallazgoModel
+@{
+    ViewData["Title"] = "Guardar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Crear Hallazgo
+  </div>
+  <div class="card-body">
+    
+      <form asp-action="Guardar" asp-controller="MantenedorH" method="post">
+          <div class="mb-3">
+            <label class="form-label"> IdHallazgo </label>
+            <input asp-for="IdHallazgo" type="text" class="form-control" >
+            <span asp-validation-for="IdHallazgo" class="text-danger"></span>
+          </div>
+
+          
+          <div class="mb-3">
+            <label class="form-label"> Comentario </label>
+            <textarea asp-for="Comentario" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Comentario" class="text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Recomendacion </label>
+            <textarea asp-for="Recomendacion" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Recomendacion" class="text-danger"></span>
+          </div>
+                   
+          <button type="submit" class="btn btn-primary">Guadar</button>
+          <a asp-action="Listar" asp-controller="MantenedorH" class="btn btn-warning" >Volver a la Lista</a>
+       </form>
+
+  </div>
+</div>
+

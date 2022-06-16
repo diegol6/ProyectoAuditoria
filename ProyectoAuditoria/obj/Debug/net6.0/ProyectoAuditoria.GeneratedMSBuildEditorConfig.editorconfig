@@ -39,6 +39,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckFcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Proyecto/ProyectoAuditoria/ProyectoAuditoria/Views/MantenedorH/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckhcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/ProyectoAuditoria/ProyectoAuditoria/Views/MantenedorH/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckhcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/ProyectoAuditoria/ProyectoAuditoria/Views/MantenedorH/Guardar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckhcR3VhcmRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/ProyectoAuditoria/ProyectoAuditoria/Views/MantenedorH/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckhcTGlzdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Proyecto/ProyectoAuditoria/ProyectoAuditoria/Views/Mantenedor/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

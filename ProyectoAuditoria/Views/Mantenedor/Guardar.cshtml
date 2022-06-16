@@ -29,11 +29,31 @@
             <span asp-validation-for="Descripcion" class="text-danger"></span>
           </div>
 
+          <!--
           <div class="mb-3">
             <label class="form-label"> Tipo </label>
             <input asp-for="Tipo" type="text" class="form-control">
             <span asp-validation-for="Tipo" class="text-danger"></span>
           </div>
+          -->
+
+          <div class="input-group input-group-static mb-3">
+              <div class="">  </div> 
+              <br />
+                <select asp-for="Tipo" class="form-control" id="exampleFormControlSelect1">
+                       <option   value="">Tipo</option>
+                       
+                       <option   value="Informacion">Informacion</option>
+                       <option  value="Software">Software</option>
+                       <option   value="Recurso Humano">Recurso Humano</option>
+                       <option   value="Servicio">Servicio</option>
+                       <option  value="Hardware">Hardware</option>
+                       <option   value="Otro">Otro</option>
+                       
+               
+                </select>
+             
+           </div>
 
           <!--
           <div class="mb-3">
@@ -63,11 +83,28 @@
              
            </div>
 
+           <!--
           <div class="mb-3">
             <label class="form-label"> Clasificacion </label>
             <input asp-for="Clasificacion" type="text" class="form-control">
             <span asp-validation-for="Clasificacion" class="text-danger"></span>
           </div>
+            -->
+
+          <div class="input-group input-group-static mb-3">
+              <div class="">  </div> 
+              <br />
+                <select asp-for="Clasificacion" class="form-control" id="exampleFormControlSelect1">
+                       <option   value="">Clasificacion</option>
+                       
+                       <option   value="Confidencialidad">Confidencialidad</option>
+                       <option  value="Integridad">Integridad</option>
+                       <option   value="Disponibilidad">Disponibilidad</option>
+                       
+               
+                </select>
+             
+           </div>
 
           <!--
           <div class="mb-3">

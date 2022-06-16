@@ -20,9 +20,8 @@
                  <th>IdAuditoria </th>
                  <th>FechaInicioAuditoria</th>
                  <th>FechaFinalAuditoria</th>
-                 <th>Comentarios</th>
-                 <th>Recomendacion</th>
                  <th>IdActivo</th>
+                 <th>IdHallazgo</th>
                  <th></th>
              </tr>
          </thead>
@@ -33,9 +32,8 @@
                         <td>@item.IdAuditoria</td>
                        <td>@item.FechaInicioAuditoria</td>
                        <td>@item.FechaFinalAuditoria</td>
-                       <td>@item.Comentarios</td>
-                       <td>@item.Recomendacion</td>
                        <td>@item.IdActivo</td>
+                       <td><a asp-action="Listar" asp-controller="MantenedorH" asp-route-IdHallazgo="@item.IdHallazgo"> @item.IdHallazgo </a></td>
                         <td class="">
                             <a asp-action="Editar" asp-controller="MantenedorA" class="btn btn-primary btn-sm" asp-route-IdAuditoria=@item.IdAuditoria><i class="bi bi-pencil-square"></i> Editar</a>
                             <a asp-action="Eliminar" asp-controller="MantenedorA" class="btn btn-danger btn-sm" asp-route-IdAuditoria=@item.IdAuditoria><i class="bi bi-trash"></i> Eliminar</a>
