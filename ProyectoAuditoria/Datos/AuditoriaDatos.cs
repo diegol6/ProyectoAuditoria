@@ -29,9 +29,8 @@ namespace ProyectoAuditoria.Datos
                             IdAuditoria = dr["IdAuditoria"].ToString(),
                             FechaInicioAuditoria = dr["FechaInicioAuditoria"].ToString(),
                             FechaFinalAuditoria = dr["FechaFinalAuditoria"].ToString(),
-                            Comentarios = dr["Comentarios"].ToString(),
-                            Recomendacion = dr["Recomendacion"].ToString(),
                             IdActivo = dr["IdActivo"].ToString(),
+                            IdHallazgo = dr["IdHallazgo"].ToString()
 
                         });
                     }
@@ -61,9 +60,8 @@ namespace ProyectoAuditoria.Datos
                         oAuditoria.IdAuditoria = dr["IdAuditoria"].ToString();
                         oAuditoria.FechaInicioAuditoria = dr["FechaInicioAuditoria"].ToString();
                         oAuditoria.FechaFinalAuditoria = dr["FechaFinalAuditoria"].ToString();
-                        oAuditoria.Comentarios = dr["Comentarios"].ToString();
-                        oAuditoria.Recomendacion = dr["Recomendacion"].ToString();
                         oAuditoria.IdActivo = dr["IdActivo"].ToString();
+                        oAuditoria.IdHallazgo = dr["IdHallazgo"].ToString();
                     }
                 }
             }
@@ -86,9 +84,8 @@ namespace ProyectoAuditoria.Datos
                     cmd.Parameters.AddWithValue("IdAuditoria", oauditoria.IdAuditoria);
                     cmd.Parameters.AddWithValue("FechaInicioAuditoria", oauditoria.FechaInicioAuditoria);
                     cmd.Parameters.AddWithValue("FechaFinalAuditoria", oauditoria.FechaFinalAuditoria);
-                    cmd.Parameters.AddWithValue("Comentarios", oauditoria.Comentarios);
-                    cmd.Parameters.AddWithValue("Recomendacion", oauditoria.Recomendacion);
                     cmd.Parameters.AddWithValue("IdActivo", oauditoria.IdActivo);
+                    cmd.Parameters.AddWithValue("IdHallazgo", oauditoria.IdHallazgo);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.ExecuteNonQuery();
                 }
@@ -121,9 +118,8 @@ namespace ProyectoAuditoria.Datos
                     cmd.Parameters.AddWithValue("IdAuditoria", oauditoria.IdAuditoria);
                     cmd.Parameters.AddWithValue("FechaInicioAuditoria", oauditoria.FechaInicioAuditoria);
                     cmd.Parameters.AddWithValue("FechaFinalAuditoria", oauditoria.FechaFinalAuditoria);
-                    cmd.Parameters.AddWithValue("Comentarios", oauditoria.Comentarios);
-                    cmd.Parameters.AddWithValue("Recomendacion", oauditoria.Recomendacion);
                     cmd.Parameters.AddWithValue("IdActivo", oauditoria.IdActivo);
+                    cmd.Parameters.AddWithValue("IdHallazgo", oauditoria.IdHallazgo);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.ExecuteNonQuery();
                 }

@@ -14,12 +14,10 @@ namespace ProyectoAuditoria.Models
         public string? FechaFinalAuditoria { get; set; }
 
         [Required(ErrorMessage = "El campo es Obligatorio")]
-        public string? Comentarios { get; set; }
-
-        [Required(ErrorMessage = "El campo es Obligatorio")]
-        public string? Recomendacion { get; set; }
-
-        [Required(ErrorMessage = "El campo es Obligatorio")]
         public string? IdActivo { get; set; }
+
+        [Required(ErrorMessage = "El campo es Obligatorio")]
+        public string? IdHallazgo { get; set; }
+
     }
 }
