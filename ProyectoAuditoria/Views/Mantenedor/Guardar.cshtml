@@ -25,7 +25,7 @@
 
           <div class="mb-3">
             <label class="form-label"> Descripcion </label>
-            <input asp-for="Descripcion" type="text" class="form-control">
+            <textarea  asp-for="Descripcion" type="text" class="form-control"></textarea>
             <span asp-validation-for="Descripcion" class="text-danger"></span>
           </div>
 
@@ -35,11 +35,33 @@
             <span asp-validation-for="Tipo" class="text-danger"></span>
           </div>
 
+          <!--
           <div class="mb-3">
             <label class="form-label"> Departamento </label>
             <input asp-for="Departamento" type="text" class="form-control">
             <span asp-validation-for="Departamento" class="text-danger"></span>
           </div>
+          -->
+
+          <div class="input-group input-group-static mb-3">
+              <div class="">  </div> 
+              <br />
+                <select asp-for="Departamento" class="form-control" id="exampleFormControlSelect1">
+                       <option   value="">Departamento</option>
+                       
+                       <option   value="Contabilidad">Contabilidad</option>
+                       <option  value="RRHH">RRHH</option>
+                       <option   value="Compras">Compras</option>
+                       <option   value="Seguridad">Seguridad</option>
+                       <option  value="IT">IT</option>
+                       <option   value="Calidad">Calidad</option>
+                       <option   value="Almacenes">Almacenes</option>
+                       <option  value="Administracion">Administracion</option>
+                       <option   value="Produccion">Produccion</option>
+               
+                </select>
+             
+           </div>
 
           <div class="mb-3">
             <label class="form-label"> Clasificacion </label>
@@ -47,11 +69,26 @@
             <span asp-validation-for="Clasificacion" class="text-danger"></span>
           </div>
 
+          <!--
           <div class="mb-3">
             <label class="form-label"> Criticidad </label>
             <input asp-for="Criticidad" type="text" class="form-control" >
             <span asp-validation-for="Criticidad" class="text-danger"></span>
           </div>
+          -->
+
+          <div class="input-group input-group-static mb-3">
+              <div class="">  </div>
+                <select asp-for="Criticidad" class="form-control" id="exampleFormControlSelect1">
+                        <option   value="">Criticidad</option>
+
+                       <option   value="Baja">Baja</option>
+                       <option  value="Media">Media</option>
+                       <option   value="Alta">Alta</option>
+               
+                </select>
+                
+           </div>
 
           <div class="mb-3">
             <label class="form-label"> Propietario </label>

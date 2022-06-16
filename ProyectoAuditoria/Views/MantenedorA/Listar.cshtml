@@ -6,11 +6,11 @@
 
 <div class="card">
   <div class="card-header">
-    Listar Auditorias
+    Lista de Auditorias
   </div>
   <div class="card-body">
     
-   <a asp-action="Guardar" asp-controller="MantenedorA" class="btn btn-success" >Crear Nueva Auditoria</a>
+   <a asp-action="Guardar" asp-controller="MantenedorA" class="btn btn-success" > <i class="bi bi-plus-circle"></i> Crear Nueva Auditoria</a>
 
    <hr />
 
@@ -36,9 +36,9 @@
                        <td>@item.Comentarios</td>
                        <td>@item.Recomendacion</td>
                        <td>@item.IdActivo</td>
-                        <td>
-                            <a asp-action="Editar" asp-controller="MantenedorA" class="btn btn-primary btn-sm" asp-route-IdAuditoria=@item.IdAuditoria>Editar</a>
-                            <a asp-action="Eliminar" asp-controller="MantenedorA" class="btn btn-danger btn-sm" asp-route-IdAuditoria=@item.IdAuditoria>Eliminar</a>
+                        <td class="">
+                            <a asp-action="Editar" asp-controller="MantenedorA" class="btn btn-primary btn-sm" asp-route-IdAuditoria=@item.IdAuditoria><i class="bi bi-pencil-square"></i> Editar</a>
+                            <a asp-action="Eliminar" asp-controller="MantenedorA" class="btn btn-danger btn-sm" asp-route-IdAuditoria=@item.IdAuditoria><i class="bi bi-trash"></i> Eliminar</a>
                         </td>
                     </tr>
                 }

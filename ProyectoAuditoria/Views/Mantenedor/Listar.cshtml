@@ -6,12 +6,13 @@
 
 <div class="card">
   <div class="card-header">
-    Listar Activo
+    Lista de Activos
   </div>
   <div class="card-body">
     
-   <a asp-action="Guardar" asp-controller="Mantenedor" class="btn btn-success" >Crear Nuevo Activo</a>
-
+   <a asp-action="Guardar" asp-controller="Mantenedor" class="btn btn-success"> <i class="bi bi-plus-circle"></i> Crear Nuevo Activo</a>
+   <a class="btn btn-warning"> <i class="bi bi-currency-dollar"></i>Depreciacion </a>
+   <a class="btn btn-warning"> <i class="bi bi-currency-dollar"></i>Amortizacion </a>
    <hr />
 
    <table class="table table-bordered">
@@ -49,8 +50,8 @@
                         <td>@item.Fecha_Ingreso</td>
                         <td>@item.Fecha_Salida</td>
                         <td>
-                            <a asp-action="Editar" asp-controller="Mantenedor" class="btn btn-primary btn-sm" asp-route-IdActivo=@item.IdActivo>Editar</a>
-                            <a asp-action="Eliminar" asp-controller="Mantenedor" class="btn btn-danger btn-sm" asp-route-IdActivo=@item.IdActivo>Eliminar</a>
+                            <a asp-action="Editar" asp-controller="Mantenedor" class="btn btn-primary btn-sm" asp-route-IdActivo=@item.IdActivo><i class="bi bi-pencil-square"></i> Editar</a>
+                            <a asp-action="Eliminar" asp-controller="Mantenedor" class="btn btn-danger btn-sm" asp-route-IdActivo=@item.IdActivo> <i class="bi bi-trash"></i>Eliminar</a>
                         </td>
                     </tr>
                 }
